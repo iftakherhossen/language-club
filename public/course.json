@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Arabic Course",
+        "description": "Arabic language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 5500,
+        "duration": 3,
+        "img": "./images/arabic.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Bangla Course",
+        "description": "Spanish language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 3500,
+        "duration": 3,
+        "img": ""
+    },
+    {
+        "id": 3,
+        "title": "English Course",
+        "description": "English language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 4500,
+        "duration": 3,
+        "img": ""
+    },
+    {
+        "id": 4,
+        "title": "French Course",
+        "description": "French language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 5500,
+        "duration": 3,
+        "img": ""
+    },
+    {
+        "id": 5,
+        "title": "Spanish Course",
+        "description": "Spanish language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 5500,
+        "duration": 3,
+        "img": ""
+    },
+    {
+        "id": 6,
+        "title": "Chinese Course",
+        "description": "Chinese language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 5500,
+        "duration": 3,
+        "img": ""
+    },
+    {
+        "id": 7,
+        "title": "Japanese Course",
+        "description": "Japanese language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 5500,
+        "duration": 3,
+        "img": ""
+    },
+    {
+        "id": 8,
+        "title": "Hindi Course",
+        "description": "Hindi language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 4500,
+        "duration": 3,
+        "img": ""
+    },
+    {
+        "id": 9,
+        "title": "Korean Course",
+        "description": "Arabic language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.",
+        "fee": 5500,
+        "duration": 3,
+        "img": ""
+    }
+]

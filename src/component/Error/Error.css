@@ -1,0 +1,12 @@
+.error-txt {
+    font-size: 150px;
+}
+.error-btn {
+    border: 5px solid gray;
+    background-color: #ccc;
+}
+.error-btn:hover {
+    border: 5px solid navy;
+    background-color: white;
+    color: navy;
+}

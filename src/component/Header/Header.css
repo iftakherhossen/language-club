@@ -1,0 +1,7 @@
+.btn-hover {
+    border-bottom: 4px solid transparent;
+}
+.btn-hover:hover {
+    color: white !important;
+    border-bottom: 4px solid #eee;
+}
