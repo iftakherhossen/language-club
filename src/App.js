@@ -9,6 +9,8 @@ import Home from './component/Home/Home';
 import Courses from './component/Courses/Courses';
 import Error from './component/Error/Error';
 import Admission from './component/Admission/Admission';
+import About from './component/About/About';
+import Contact from './component/Contact/Contact';
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
           </Route>
           <Route path="/admission">
             <Admission></Admission>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
           <Route path="*">
             <Error></Error>

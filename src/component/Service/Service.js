@@ -1,93 +1,88 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
+import arabicPoster from './images/arabic.png';
+import spanishPoster from './images/spanish.png';
+import englishPoster from './images/english.png';
+
 
 const Service = () => {
     return (
         <div>
-            <Row xs={1} className="g-4">
-                <Col className="d-flex">
-                    <Card className="w-100 text-center">
-                        <Card.Body>
-                            <Card.Title className="fs-4 text-danger">Spring Offer</Card.Title>
-                            <Card.Text className="fw-bold">Get 20% Discount at All Courses</Card.Text>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button className="btn red-font text-white px-3">See Details</button>
-                        </Card.Footer>
-                    </Card>
-                </Col>
-                <Col className="d-flex">
-                    <Card className="w-100">
-                        <Card.Img variant="top" src="https://i0.wp.com/www.arabamerica.com/wp-content/uploads/2021/02/600_469094863.jpeg?fit=400%2C181&ssl=1" />
-                        <Card.Body>
-                            <Card.Title className="fs-4">Arabic Course</Card.Title>
-                            <Card.Text>Arabic language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
-                            <h5 className="mt-1">Course Fee: 5500</h5>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button className="btn red-font text-white">See Details</button>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="w-100">
-                        <Card.Img variant="top" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEhMSFRIWFRUWFhgWGBcXGhUZFRcYFxgYGhgYHCggGBslGxYWITEhJikrLi4uGB8zODMsNygtLisBCgoKDg0OGxAQGi4iICUrLS0vLS4rLS0tLSstLy0vMi0tLS0tLS0tLS0tLS0uLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAJoBSAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwIBB//EAEYQAAEDAgQCBwMHCQcFAQAAAAEAAgMEEQUSITEGQRMiUWFxgZEywdEUNUJScqHwFjRUkrGys8LhIzNTY3Oi4hVDgtLTJP/EABkBAQADAQEAAAAAAAAAAAAAAAABAwQCBf/EADQRAAICAQMCBAMFCAMAAAAAAAABAhEDEiExBBNBUWFxIoGRQqGxwfEUJDJyotHh8AVTkv/aAAwDAQACEQMRAD8A/cUREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREARFExOQtic4GxABHqEBLRRKCsbK243+kOw/BRMVoHvIfG4g2sRcgHvCAtkVJh2GSNcHyPNhs0OJue9SMcqskeUHrO0HcOZ93mgLNFQ8NucS8kkgBo1JO9/goL39LXOie97WAFrQ1xbqAD8SqM+ftaVVuTSXhyXYcXcveklZrEWUw0yQ1Rgc9zmPBsSb8iWu12OhChYvST07w9skjmXu11zoexw29xWWXXuOPX23s2pbravxNEejUp6Na3Sa53v8DcIq7Bq8TRB+ztnDsI93PzVit8JxnFSjwzHOLhJxlygiyvEWKTx1DIYXAZmssCAes5xG58l6y4n2x/7Pgsz6uOqUVGTp06V/maV0ctMZOUVatW/wDBqEWPnxqspy35RG1zCbXFte4OabA+IWppahsjGyN1a4AjzVmLqIZG4q01ymqZXm6eeJKTpp8NO0d0XCrqBGx0jtmtJPksjhPEU5mjExHRyEgdUDc2BB7naeajN1OPFKMZeP6bk4emyZYylHw+/a9vkbVEWc4txOWDo+icBmz3uAdstt/ErvNl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" />
-                        <Card.Body>
-                            <Card.Title className="fs-4">Bangla Course</Card.Title>
-                            <Card.Text>Bangla language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
-                            <h5 className="mt-1">Course Fee: 3500</h5>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button className="btn red-font text-white">See Details</button>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="w-100">
-                        <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMHUnksKbFXitQftD0TKvZKtQ0aUOKeA8Z5g&usqp=CAU" />
-                        <Card.Body>
-                            <Card.Title className="fs-4">Hindi Course</Card.Title>
-                            <Card.Text>Hindi language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
-                            <h5 className="mt-1">Course Fee: 4500</h5>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button className="btn red-font text-white">See Details</button>
-                        </Card.Footer>
-                    </Card>
-                </Col>
-                <Col className="d-flex">
-                    <Card className="w-100">
-                        <Card.Img variant="top" src="data:image/jpeg;base64,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" />
-                        <Card.Body>
-                            <Card.Title className="fs-4">French Course</Card.Title>
-                            <Card.Text>French language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
-                            <h5 className="mt-1">Course Fee: 5500</h5>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button className="btn red-font text-white">See Details</button>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="w-100">
-                        <Card.Img variant="top" src="https://images.squarespace-cdn.com/content/v1/5a9850b95417fc1f5c48bde0/1539542440231-N66I771WML76TL0AXL5O/aprenda-espanol.jpg?format=1000w" />
-                        <Card.Body>
-                            <Card.Title className="fs-4">Spanish Course</Card.Title>
-                            <Card.Text>Spanish language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
-                            <h5 className="mt-1">Course Fee: 5500</h5>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button className="btn red-font text-white">See Details</button>
-                        </Card.Footer>
-                    </Card>
-                    <Card className="w-100">
-                        <Card.Img variant="top" src="https://images.squarespace-cdn.com/content/v1/5a9850b95417fc1f5c48bde0/1520253161100-GYGD45OEANG3JMJV4XK7/Chinese+Language+Course+in+Dhaka.png?format=1000w" />
-                        <Card.Body>
-                            <Card.Title className="fs-4">Chinese Course</Card.Title>
-                            <Card.Text>Chinese language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
-                            <h5 className="mt-1">Course Fee: 5500</h5>
-                        </Card.Body>
-                        <Card.Footer>
-                            <button className="btn red-font text-white">See Details</button>
-                        </Card.Footer>
-                    </Card>
-                </Col>
-            </Row>
+            <Container>
+                <Row xs={1} className="g-4">
+                    {/* Offer */}
+                    <Col className="d-flex">
+                        <Card className="w-100 text-center card-bg">
+                            <Card.Body>
+                                <Card.Title className="fs-4 text-danger">Spring Offer</Card.Title>
+                                <Card.Text className="fw-bold">Get 20% Discount at All Courses</Card.Text>
+                                <Link to="/course">
+                                    <button className="btn red-font text-white px-3">See Details</button>
+                                </Link>
+                            </Card.Body>
+                            <Card.Footer className="text-muted">Till 10 November!</Card.Footer>
+                        </Card>
+                    </Col>
+
+                    {/* Card */}
+                    <h2 className="text-center">Popular Course</h2>
+                    <Col className="d-flex">
+                        <Card className="mx-5 my-0">
+                            <Card.Img variant="top" src={arabicPoster} />
+                            <Card.Body>
+                                <Card.Title className="fs-4">Arabic Course</Card.Title>
+                                <Card.Text>Arabic language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
+                            </Card.Body>
+                            <Card.Footer className="d-flex justify-content-between">
+                                <h5 className="mt-1">Course Fee: 5500</h5>
+                                <button className="btn red-font text-white">See Details</button>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="mx-5 my-0">
+                            <Card.Img variant="top" src={englishPoster} />
+                            <Card.Body>
+                                <Card.Title className="fs-4">English Course</Card.Title>
+                                <Card.Text>English language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
+                            </Card.Body>
+                            <Card.Footer className="d-flex justify-content-between">
+                                <h5 className="mt-1">Course Fee: 4500</h5>
+                                <button className="btn red-font text-white">See Details</button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                    <Col className="d-flex mb-3">
+                        <Card className="mx-5 mt-0">
+                            <Card.Img variant="top" src={spanishPoster} />
+                            <Card.Body>
+                                <Card.Title className="fs-4">Spanish Course</Card.Title>
+                                <Card.Text>Spanish language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
+                            </Card.Body>
+                            <Card.Footer className="d-flex justify-content-between">
+                                <h5 className="mt-1">Course Fee: 5500</h5>
+                                <button className="btn red-font text-white">See Details</button>
+                            </Card.Footer>
+                        </Card>
+                        <Card className="mx-5 mt-0">
+                            <Card.Img variant="top" src="https://images.squarespace-cdn.com/content/v1/5a9850b95417fc1f5c48bde0/1520253161100-GYGD45OEANG3JMJV4XK7/Chinese+Language+Course+in+Dhaka.png?format=1000w" />
+                            <Card.Body>
+                                <Card.Title className="fs-4">Chinese Course</Card.Title>
+                                <Card.Text>Chinese language courses help international students gain entry onto a vocational course, foundation programme or undergraduate degree. Courses can last from one week or up to a year, and teaching incorporates the key skills of reading, writing, speaking and listening.</Card.Text>
+                            </Card.Body>
+                            <Card.Footer className=" d-flex justify-content-between">
+                                <h5 className="mt-1">Course Fee: 5500</h5>
+                                <button className="btn red-font text-white">See Details</button>
+                            </Card.Footer>
+                        </Card>
+                    </Col>
+                </Row>
+                <div className="text-center mt-4">
+                    <Link to="/course">
+                        <button className="btn red-font text-white rounded-pill px-4 fs-5">See All Course</button>
+                    </Link>
+                </div>
+            </Container>
         </div>
     );
 };

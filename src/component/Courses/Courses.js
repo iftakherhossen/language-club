@@ -13,13 +13,16 @@ const Courses = () => {
 
     return (
         <div>
-            <h3 className="text-center my-4">We Have {course.length} Courses, More courses are coming soon!</h3>
-            {
-                course.map(course => <Course
-                    key={course.id}
-                    course={course}
-                ></Course>)
-            }
+            <h2 className="text-center mt-4">Language Course at Affordable Price</h2>
+            <div className="">
+                {
+                    course.map(course => <Course
+                        key={course.id}
+                        course={course}
+                    ></Course>)
+                }
+            </div>
+            <h5 className="mt-5 text-center text-primary">More course are coming soon!</h5>
         </div>
     );
 };
