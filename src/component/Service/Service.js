@@ -37,7 +37,9 @@ const Service = () => {
                             </Card.Body>
                             <Card.Footer className="d-flex justify-content-between">
                                 <h5 className="mt-1">Course Fee: 5500</h5>
-                                <button className="btn red-font text-white">See Details</button>
+                                <Link to="/course">
+                                    <button className="btn red-font text-white">See Details</button>
+                                </Link>
                             </Card.Footer>
                         </Card>
                         <Card className="mx-5 my-0">
@@ -48,7 +50,9 @@ const Service = () => {
                             </Card.Body>
                             <Card.Footer className="d-flex justify-content-between">
                                 <h5 className="mt-1">Course Fee: 4500</h5>
-                                <button className="btn red-font text-white">See Details</button>
+                                <Link to="/course">
+                                    <button className="btn red-font text-white">See Details</button>
+                                </Link>
                             </Card.Footer>
                         </Card>
                     </Col>
@@ -61,7 +65,9 @@ const Service = () => {
                             </Card.Body>
                             <Card.Footer className="d-flex justify-content-between">
                                 <h5 className="mt-1">Course Fee: 5500</h5>
-                                <button className="btn red-font text-white">See Details</button>
+                                <Link to="/course">
+                                    <button className="btn red-font text-white">See Details</button>
+                                </Link>
                             </Card.Footer>
                         </Card>
                         <Card className="mx-5 mt-0">
@@ -72,7 +78,9 @@ const Service = () => {
                             </Card.Body>
                             <Card.Footer className=" d-flex justify-content-between">
                                 <h5 className="mt-1">Course Fee: 5500</h5>
-                                <button className="btn red-font text-white">See Details</button>
+                                <Link to="/course">
+                                    <button className="btn red-font text-white">See Details</button>
+                                </Link>
                             </Card.Footer>
                         </Card>
                     </Col>
