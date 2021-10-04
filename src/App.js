@@ -8,6 +8,7 @@ import {
 import Home from './component/Home/Home';
 import Courses from './component/Courses/Courses';
 import Error from './component/Error/Error';
+import Admission from './component/Admission/Admission';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/course">
             <Courses></Courses>
+          </Route>
+          <Route path="/admission">
+            <Admission></Admission>
           </Route>
           <Route path="*">
             <Error></Error>
